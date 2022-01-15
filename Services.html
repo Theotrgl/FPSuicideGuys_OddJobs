@@ -13,7 +13,7 @@
         <div class="bg">
             <div class="navbar">
                 <a href="index.html" class="home">Odd Jobs</a>
-                <button type="button" class="sign">Sign in/Sign up</button>
+                <button type="button" class="sign" id="Sign">Sign in/Sign up</button>
                 <a href="No Working.html" class="Partner">Partner</a>
             </div>
             <div class="content">
@@ -32,31 +32,17 @@
                     <img src="img/medic.jpeg">
                     <img src="img/other.jpg">
                 </div>
-                <div class="Overlays">
-                    <div class="overlay1">
-                        <div class="title1">Gardening</div>
-                    </div>
-                    <div class="overlay2">
-                        <div class="title2">Housework</div>
-                    </div>
-                    <div class="overlay3">
-                        <div class="title3">Mental Support</div>
-                    </div>
-                    <div class="overlay4">
-                        <div class="title4">Heavy Lifting</div>
-                    </div>
-                    <div class="overlay5">
-                        <div class="title5">Delivery</div>
-                    </div>
-                    <div class="overlay6">
-                        <div class="title6">Construction</div>
-                    </div>
-                    <div class="overlay7">
-                        <div class="title7">Medical Support</div>
-                    </div>
-                    <div class="overlay8">
-                        <div class="title8">Others</div>
-                    </div>
+                <div class="Overlays1" id="OV1">
+                    <h3 class="g" id="garden">Gardening</h3>
+                    <h3 class="h" id="house">Housework</h3>
+                    <h3 class="psy"id="mental">Mental Support</h3>
+                    <h3 class="l" id="lift">Heavy Lifting</h3>                       
+                </div>
+                <div class="Overlays2" id="OV2">
+                    <h3 class="d"id="delivery">Delivery</h3>
+                    <h3 class="cst"id=constr>Construction</h3>
+                    <h3 class="m" id="medic">Medical Support</h3>
+                    <h3 class="o" id="other">Others</h3>
                 </div>
             </div>
             <a href="PersInfo.html" class="next">Tell Us More About Your Request</a>
@@ -81,6 +67,26 @@
                 </div>
             </div>
         </div>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close">+</div>
+                <h3>Sign In</h3>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <p id="signup">Dont have an account yet?</p>
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="bg-modal2">
+            <div class="modal-content2">
+                <div class="close2">+</div>
+                <h3>Sign Up</h3>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <p id="signin">Already have an account?</p>
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
         <script>
             document.querySelectorAll('.accordion_button').forEach(button=>{
                 button.addEventListener('click',()=>{
@@ -96,6 +102,54 @@
 
                 });
             });
+
+            document.getElementById("Sign").addEventListener('click', function(){
+                document.querySelector(".bg-modal").style.display="flex";
+            });
+
+            document.querySelector(".close").addEventListener("click",function(){
+                document.querySelector(".bg-modal").style.display="none";
+            });
+
+            document.getElementById("signup").addEventListener('click', function(){
+                document.querySelector(".bg-modal").style.display="none";
+                document.querySelector(".bg-modal2").style.display="flex";
+            });
+
+            document.querySelector(".close2").addEventListener("click",function(){
+                document.querySelector(".bg-modal2").style.display="none";
+            });
+
+            document.getElementById("signin").addEventListener('click', function(){
+                document.querySelector(".bg-modal2").style.display="none";
+                document.querySelector(".bg-modal").style.display="flex";
+            });
+
+            document.getElementById("garden").addEventListener("click", function(){
+                document.querySelector(".g").style.opacity=1;
+            });
+            document.getElementById("house").addEventListener("click", function(){
+                document.querySelector(".h").style.opacity=1;
+            });
+            document.getElementById("mental").addEventListener("click", function(){
+                document.querySelector(".psy").style.opacity=1;
+            });
+            document.getElementById("lift").addEventListener("click", function(){
+                document.querySelector(".l").style.opacity=1;
+            });
+            document.getElementById("delivery").addEventListener("click", function(){
+                document.querySelector(".d").style.opacity=1;
+            });
+            document.getElementById("constr").addEventListener("click", function(){
+                document.querySelector(".cst").style.opacity=1;
+            });
+            document.getElementById("medic").addEventListener("click", function(){
+                document.querySelector(".m").style.opacity=1;
+            });
+            document.getElementById("other").addEventListener("click", function(){
+                document.querySelector(".o").style.opacity=1;
+            });
+
         </script>
     </body>
 </html>

@@ -13,7 +13,7 @@
         <div class="bg">
             <div class="navbar">
                 <a href="index.html" class="home">Odd Jobs</a>
-                <button type="button" class="sign">Sign in/Sign up</button>
+                <button type="button" class="sign" id="Sign">Sign in/Sign up</button>
                 <a href="No Working.html" class="Partner">Partner</a>
             </div>
             <div class="content">
@@ -24,7 +24,9 @@
                 <div class="DescSect">
                     <textarea placeholder="Describe The Details of Your Request..."></textarea>
                 </div>
-                <h3>Please Enter Your Address</h3>
+                <div class="enterAddress">
+                    <h3>Please Enter Your Address</h3>
+                </div>
                 <div class="Location">
                     <div class="Province">
                         <p>Province</p>
@@ -48,7 +50,7 @@
                     </div>
                 </div>
                 <button type="button" id="submit1" class="Submit">Submit</button>
-                <a href="" class="next">Proceed To Payment</a>
+                <a href="ThankYou.html" class="next">Finish Up Your Order</a>
             </div>
             <div class="Footer">
                 <div class="Accordion">
@@ -70,6 +72,26 @@
                     </ul>
                 </div>
             </div>
+            <div class="bg-modal">
+                <div class="modal-content">
+                    <div class="close">+</div>
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Password">
+                    <p id="signup">Dont have an account yet?</p>
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            </div>
+            <div class="bg-modal2">
+                <div class="modal-content2">
+                    <div class="close2">+</div>
+                    <h3>Sign Up</h3>
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Password">
+                    <p id="signin">Already have an account?</p>
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            </div>
         
         <script>
             document.getElementById("submit1").onclick=function(){
@@ -88,6 +110,28 @@
                     }
 
                 });
+            });
+
+            document.getElementById("Sign").addEventListener('click', function(){
+                document.querySelector(".bg-modal").style.display="flex";
+            });
+
+            document.querySelector(".close").addEventListener("click",function(){
+                document.querySelector(".bg-modal").style.display="none";
+            });
+
+            document.getElementById("signup").addEventListener('click', function(){
+                document.querySelector(".bg-modal").style.display="none";
+                document.querySelector(".bg-modal2").style.display="flex";
+            });
+
+            document.querySelector(".close2").addEventListener("click",function(){
+                document.querySelector(".bg-modal2").style.display="none";
+            });
+
+            document.getElementById("signin").addEventListener('click', function(){
+                document.querySelector(".bg-modal2").style.display="none";
+                document.querySelector(".bg-modal").style.display="flex";
             });
         </script>
     </body>

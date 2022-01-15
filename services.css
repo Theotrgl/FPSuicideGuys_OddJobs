@@ -7,6 +7,7 @@
     width:100%;
     height:180vh;
     background-color: black;
+    overflow-x: hidden;
 }
 .home{
     font-size: 18px;
@@ -99,239 +100,58 @@
     height:175px;
     border-radius: 10px;
     margin:9px;
-}   
-
-.overlay1{
-    background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
+} 
+.content .Overlays1{
+    display:flex;
+    justify-content: space-around;
     position:absolute;
     top:50%;
-    margin:9px;
+    padding-left: 15%;
+    cursor: pointer;
+}
+.content .Overlays2{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    left:15%;
-    opacity: 0;
-    transition: .4s;
-}
-.overlay2{
-    background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
-    position:absolute;
-    top:50%;
-    margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 32.5%;
-    opacity: 0;
-    transition: .4s;
-}
-.overlay3{
-    background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
-    position:absolute;
-    top:50%;
-    margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    opacity: 0;
-    transition: .4s;
-}
-.overlay4{
-    background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
-    position:absolute;
-    top:50%;
-    margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 67.5%;
-    opacity: 0;
-    transition: .4s;
-}
-.title1{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.title2{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.title3{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.title4{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.overlay1:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay2:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay3:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay4:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay5{
-    background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
+    justify-content: space-around;
     position:absolute;
     top:85%;
-    margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 15%;
-    opacity: 0;
-    transition: .4s;
+    padding-left: 15%;
+    cursor: pointer;
 }
-.overlay6{
-    background-color: rgba(255, 254, 254, 0.6);
+.content .Overlays1 h3{
     width:250px;
     height:175px;
     border-radius: 10px;
-    position:absolute;
-    top:85%;
     margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 32.5%;
-    opacity: 0;
-    transition: .4s;
-}
-.overlay7{
     background-color: rgba(255, 254, 254, 0.6);
+    box-sizing:border-box;
+    padding-top:70px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline 3px #d41313;
+    text-underline-offset: 3px;
+    opacity:0;
+    transition:.3s;
+}
+.content .Overlays2 h3{
     width:250px;
     height:175px;
     border-radius: 10px;
-    position:absolute;
-    top:85%;
     margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    opacity: 0;
-    transition: .4s;
-}
-.overlay8{
     background-color: rgba(255, 254, 254, 0.6);
-    width:250px;
-    height:175px;
-    border-radius: 10px;
-    position:absolute;
-    top:85%;
-    margin:9px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    left: 67.5%;
-    opacity: 0;
-    transition: .4s;
+    box-sizing:border-box;
+    padding-top:70px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline 3px #d41313;
+    text-underline-offset: 3px;
+    opacity:0;
+    transition:.4s;
 }
-.title5{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
+.content .Overlays1 h3:hover{
+    opacity:1;
 }
-.title6{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.title7{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.title8{
-    position:relative;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline solid 4px #d41313;
-    text-underline-offset: 5px;
-    bottom:5px;
-}
-.overlay5:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay6:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay7:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
-}
-.overlay8:hover{
-    opacity: 1;
-    border-radius: 10px;
-    margin:9px;
+.content .Overlays2 h3:hover{
+    opacity:1;
 }
 .next{
     color:white;
@@ -366,14 +186,14 @@
     justify-content: space-between;
     background-color: white;
     position:relative;
-    top: 83%;
+    top: 81.4%;
 }
 .red{
     background-color: #d41313;
     width:100%;
-    height:5%;
+    height:4%;
     position:relative;
-    top:81%;
+    top:79%;
     font-weight: 600;
 }
 .red li{
@@ -386,7 +206,7 @@
     text-decoration:none;
     margin:20px;
     position:relative;
-    top:5px;
+
 }
 .lists{
     position:relative;
@@ -421,6 +241,131 @@
     max-height:0px;
     transition:max-height 0.2s;
     padding:0 15px;
+}
+
+.bg-modal{
+    position:absolute;
+    right:50px;
+    top: 80px;
+    background-color: rgba(20, 20, 20, 0.918);
+    width:300px;
+    height:300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    border:1px solid white;
+    display:none ;
+
+}
+.modal-content{
+    text-align: center;
+    align-items: center;
+    width:50%;
+}
+.modal-content h3{
+    color:white;
+    margin:10%;
+    padding-bottom: 35%;
+}
+.modal-content input{
+    margin:5px auto;
+    display: block;
+    width:150px
+}
+.modal-content p{
+    color:white;
+    font-size: 12px;
+    display: block;
+    position:relative;
+    top:15%;
+    cursor: pointer;
+}
+.modal-content button{
+    position:relative;
+    top: 15%;
+    margin:15px auto;
+    border-radius: 10px;
+    width:50px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    cursor:pointer;
+    transition: .2s;
+}
+.modal-content button:hover{
+    background-color: white;
+    color:black;
+}
+.close{
+    color:white;
+    position:absolute;
+    right:5%;
+    font-size: 40px;
+    transform: translate(40%,-20%) rotate(45deg);
+    cursor: pointer;
+}
+
+.bg-modal2{
+    position:absolute;
+    right:50px;
+    top: 80px;
+    background-color: rgba(20, 20, 20, 0.918);
+    width:300px;
+    height:300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    border:1px solid white;
+    display: none;
+
+}
+.modal-content2{
+    text-align: center;
+    align-items: center;
+    width:50%;
+}
+.modal-content2 h3{
+    color:white;
+    margin:10%;
+    padding-bottom: 35%;
+}
+.modal-content2 input{
+    margin:5px auto;
+    display: block;
+    width:150px
+}
+.modal-content2 p{
+    color:white;
+    font-size: 12px;
+    display: block;
+    position:relative;
+    top:15%;
+    cursor: pointer;
+}
+.modal-content2 button{
+    position:relative;
+    top: 15%;
+    margin:15px auto;
+    border-radius: 10px;
+    width:50px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    cursor:pointer;
+    transition: .2s;
+}
+.modal-content2 button:hover{
+    background-color: white;
+    color:black;
+}
+.close2{
+    color:white;
+    position:absolute;
+    right:5%;
+    font-size: 40px;
+    transform: translate(40%,-20%) rotate(45deg);
+    cursor: pointer;
+    
 }
 
 ::-webkit-scrollbar{
