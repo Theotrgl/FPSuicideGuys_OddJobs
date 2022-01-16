@@ -134,6 +134,9 @@
     position:relative;
     top:75.5%;
 }
+.Footer a{
+    color:black;
+}
 .red{
     background-color: #d41313;
     width:100%;
