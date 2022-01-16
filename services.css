@@ -65,6 +65,10 @@
     outline:none;
     cursor:pointer;
 }
+.content{
+    display: flex;
+    justify-content: center;
+}
 .content .text h1{
     font-size:40px;
     position:absolute;
@@ -80,14 +84,14 @@
     justify-content: space-around;
     position:absolute;
     top:50%;
-    padding-left: 15%;
+    align-items: center;
 }
 .content .images2{
     display:flex;
     justify-content: space-around;
     position:absolute;
     top:85%;
-    padding-left: 15%;
+    align-items: center;
 }
 .content .images1 img{
     width:250px;
@@ -106,16 +110,16 @@
     justify-content: space-around;
     position:absolute;
     top:50%;
-    padding-left: 15%;
     cursor: pointer;
+    align-items: center;
 }
 .content .Overlays2{
     display:flex;
     justify-content: space-around;
     position:absolute;
     top:85%;
-    padding-left: 15%;
     cursor: pointer;
+    align-items: center;
 }
 .content .Overlays1 h3{
     width:250px;
