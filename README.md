@@ -17,7 +17,7 @@ Jairo-
 
 Description:
 
-A website designed to make everyday problems easier by employing capable and professional workers, which is knowledgable in various things. Our website is a website designed for a company that helps people in facing everyday problems, starting from deliveries to heavy-lifting.
+A website designed to make everyday problems easier by employing capable and professional workers, which is knowledgable in various things. Our website is designed for people facing everyday problems albeit deliveries, housework, heavy lifting, or even the need for mental support. In these recent years where COVID has struck the world, less and less people are willing to help other people with these struggles. The goal of our company is to reach out to the people in need while expanding the reach of our hands so we can help more people and help the world become a better place.
 
 Features:
 
@@ -27,6 +27,12 @@ Other information:
 
 
 Active Website Link: https://theotrgl.github.io/FPSuicideGuys_OddJobs/
+
+Inspiration Website: https://sites.google.com/view/oddjbs/home
+
+Poster:
+
+[Odd Jobs Poster.pdf](https://github.com/Theotrgl/FPSuicideGuys_OddJobs/files/7882181/Odd.Jobs.Poster.pdf)
 
 
 
