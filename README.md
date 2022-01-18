@@ -1,22 +1,15 @@
 # FPSuicideGuys_OddJobs
-Class:L1CC
-
-
-Course:Human Computer Interaction (COMP6800001)-Final Project
-
-
+Class:L1CC<br>
+Course:Human Computer Interaction (COMP6800001)-Final Project<br>
 Team:SUICIDE GUYS
 
 
-Members:
-
-Justin-2502036382
-
+Members:<br>
+Justin-2502036382<br>
 Jairo-
 
 
-Description:
-
+Description:<br>
 Our Website is made using HTML, CSS, and a bit of Javascript, the HTML and CSS component used for determining the layout of the objects and images in the website while also adding aesthetic effects to mainly the buttons and other objects, whereas the Javascript is used to add more functionality to the website which is applied in objects such as the About Us section of the page where it has a sort of "Pop-Up" style effect to it and also the sign in/Sign up window which also utilizes a pop-up element. Our website is quite but not fully responsive as almost each page is constructed using flexbox but doesn't have any media queries to specifically target smaller or larger screen sizes. In our website as well, if you've noticed in the right side of the pages we made a custom scrollbar so that it would fit in to the theme of the website more and provide a more elegant look to our website. In relations with our company "Odd Jobs", we think that it is a great compliment to our services and makes ordering and managing our workers easier , so that we can provide a quicker and more efficient service which is benneficial for our clients and us.
 
 Features:<br>
